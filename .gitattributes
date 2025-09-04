@@ -1,2 +1,2 @@
-*.sh linguist-detectable=false
+.p10k.zsh linguist-detectable=false
 
