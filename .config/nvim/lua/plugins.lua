@@ -1,5 +1,13 @@
 vim.cmd [[packadd packer.nvim]]
 
+-- for auto regeneration for packer_compile.lua file
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]]
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'   -- packer manages itself
 
@@ -7,22 +15,8 @@ return require('packer').startup(function(use)
 
   use {
     'christoomey/vim-tmux-navigator', -- for navigation between tmux panes
-    cmd = {
-      "TmuxNavigateLeft",
-      "TmuxNavigateDown",
-      "TmuxNavigateUp",
-      "TmuxNavigateRight",
-      "TmuxNavigatePrevious",
-      "TmuxNavigatorProcessList",
-    },
-    keys = {
-      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
-      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
-    },
-  }
-end)
+    config = function()
+      require('keymaps').setup()
+    end
 
-
+  } end)
