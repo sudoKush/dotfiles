@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/kanagawa.toml"
+    "~/.config/alacritty/themes/gruvbox_material.toml"
 ]
 
 [env]
