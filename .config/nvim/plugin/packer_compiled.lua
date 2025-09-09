@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/kush/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/kush/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
+local package_path_str = "/home/kush/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?/init.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?.lua;/home/kush/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/kush/.cache/nvim/packer_hererocks/2.1.1753364724/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -85,8 +85,13 @@ _G.packer_plugins = {
     path = "/home/kush/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/kush/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\17sync_install\1\vindent\0\17auto_install\2\14highlight\0\21ensure_installed\0\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\14highlight\0\21ensure_installed\0\vindent\0\17auto_install\2\17sync_install\1\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/kush/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -121,18 +126,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vim-tmux-navigator
-time([[Config for vim-tmux-navigator]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fkeymaps\frequire\0", "config", "vim-tmux-navigator")
-time([[Config for vim-tmux-navigator]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\14highlight\0\21ensure_installed\0\vindent\0\17auto_install\2\17sync_install\1\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: gruvbox-material
 time([[Config for gruvbox-material]], true)
 try_loadstring("\27LJ\2\nu\0\0\3\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\21gruvbox-material\16colorscheme\bcmd#gruvbox_material_enable_italic\6g\bvim\0", "config", "gruvbox-material")
 time([[Config for gruvbox-material]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\17sync_install\1\vindent\0\17auto_install\2\14highlight\0\21ensure_installed\0\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
+-- Config for: vim-tmux-navigator
+time([[Config for vim-tmux-navigator]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fkeymaps\frequire\0", "config", "vim-tmux-navigator")
+time([[Config for vim-tmux-navigator]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
