@@ -82,6 +82,9 @@ return require('packer').startup(function(use)
 
 	use 'nvim-lua/plenary.nvim' -- dependency for telescope
 	use 'nvim-telescope/telescope.nvim' -- fuzzy finder
+	
+	use 'norcalli/nvim-colorizer.lua' -- colorizer
+	require'colorizer'.setup()
 
 	use {
 		'christoomey/vim-tmux-navigator', -- tmux navigation
