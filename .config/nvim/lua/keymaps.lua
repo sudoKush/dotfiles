@@ -7,6 +7,8 @@ keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", { desc = "Recently o
 keymap.set("n", "<leader>g", "<cmd>Telescope live_grep<cr>", { desc = "Grep in cwd" })
 keymap.set("n", "<leader>k", "<cmd>Telescope keymaps<cr>", { desc = "Search keymaps" })
 
+keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>") 
+
 local M = {}
 function M.setup()
   vim.api.nvim_set_keymap('n', '<C-h>', ':TmuxNavigateLeft<CR>', opts)
