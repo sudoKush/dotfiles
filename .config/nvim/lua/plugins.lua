@@ -107,5 +107,7 @@ return require('packer').startup(function(use)
 		end,
 	}
 
+	use 'eandrju/cellular-automaton.nvim'  -- a useless plugin but cool plugin
+
 end)
 
