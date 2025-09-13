@@ -18,4 +18,3 @@ function M.setup()
   vim.api.nvim_set_keymap('n', '<C-\\>', ':TmuxNavigatePrevious<CR>', opts)
 end
 return M
-
