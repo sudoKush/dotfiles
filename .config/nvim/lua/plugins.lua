@@ -108,10 +108,4 @@ return require('packer').startup(function(use)
 	}
 
 	use 'eandrju/cellular-automaton.nvim'  -- a useless plugin but cool plugin
-
-	use 'neovim/nvim-lspconfig'
-	use 'jose-elias-alvarez/null-ls.nvim'
-	use 'MunifTanjim/prettier.nvim'
-
 end)
-
