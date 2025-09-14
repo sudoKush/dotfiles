@@ -9,6 +9,9 @@ keymap.set("n", "<leader>k", "<cmd>Telescope keymaps<cr>", { desc = "Search keym
 
 keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>") 
 
+keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>")
+
+
 local M = {}
 function M.setup()
   vim.api.nvim_set_keymap('n', '<C-h>', ':TmuxNavigateLeft<CR>', opts)
