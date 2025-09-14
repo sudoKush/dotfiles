@@ -4,16 +4,13 @@ import = [
 ]
 
 [env]
-TERM = "xterm-256color"
+TERM = "tmux-256color"
 
 [window]
 padding.x = 25
 padding.y = 25
 
 decorations = "Buttonless"
-
-opacity = 0.8
-blur = true
 
 option_as_alt = "Both"
 
