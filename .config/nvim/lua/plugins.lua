@@ -110,4 +110,6 @@ return require('packer').startup(function(use)
 	use 'eandrju/cellular-automaton.nvim'  -- a useless plugin but cool plugin
 
 	use 'kdheepak/lazygit.nvim' -- a really useful plugin for terminal git ui
+
+	use 'MeanderingProgrammer/render-markdown.nvim' -- for rendering markdowns in normal mode
 end)
