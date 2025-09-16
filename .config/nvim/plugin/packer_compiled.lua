@@ -101,7 +101,7 @@ _G.packer_plugins = {
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\17sync_install\1\21ensure_installed\0\14highlight\0\vindent\0\17auto_install\2\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\14highlight\0\vindent\0\17auto_install\2\17sync_install\1\21ensure_installed\0\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/kush/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -122,6 +122,11 @@ _G.packer_plugins = {
     path = "/home/kush/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["render-markdown.nvim"] = {
+    loaded = true,
+    path = "/home/kush/.local/share/nvim/site/pack/packer/start/render-markdown.nvim",
+    url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/kush/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -138,7 +143,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\17sync_install\1\21ensure_installed\0\14highlight\0\vindent\0\17auto_install\2\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+try_loadstring("\27LJ\2\nº\2\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\5\14highlight\0\vindent\0\17auto_install\2\17sync_install\1\21ensure_installed\0\1\15\0\0\6c\blua\bvim\vvimdoc\nquery\rmarkdown\20markdown_inline\vpython\15javascript\ttoml\btsx\tjava\thtml\bcss\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
 -- Config for: gruvbox-material
 time([[Config for gruvbox-material]], true)
